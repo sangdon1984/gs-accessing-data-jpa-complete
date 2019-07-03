@@ -6,7 +6,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import lombok.*;
+
 @Entity
+@Data
 public class Customer {
 
     @Id
@@ -29,18 +32,5 @@ public class Customer {
                 id, firstName, lastName);
     }
 
-// end::sample[]
-
-	public Long getId() {
-		return id;
-	}
-
-	public String getFirstName() {
-		return firstName;
-	}
-
-	public String getLastName() {
-		return lastName;
-	}
 }
 
